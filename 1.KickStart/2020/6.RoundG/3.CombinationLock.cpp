@@ -22,6 +22,7 @@ int main() {
         for (int i = 1; i <= n; i++) {//将所有轮子调到i
             long long temp = 0;
             for (int j = 1; j <= w; j++) {
+                // 龙哥说把下一行的i改成x[i]就可以过第二个测试样例了;
                 long long temp0 = min(abs(x[j] - i), abs(n - x[j] + i));
                 temp0 = min(temp0, abs(n - i + x[j]));
                 temp += temp0;
